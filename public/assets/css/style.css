@@ -1,0 +1,239 @@
+body {
+  background-color: #f5f6f5;
+}
+
+body .animasi {
+  position: relative !important;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  opacity: 0;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+body .animasi.show {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+body h2.info {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+}
+
+body section.jumbocover {
+  background-image: url("http://localhost:8080/assets/img/wedding-pose-1.jpg");
+  background-size: cover;
+  display: none;
+  position: fixed;
+  width: 100% !important;
+  height: 768px !important;
+  max-height: 100%;
+  z-index: 10;
+  bottom: 0;
+}
+
+body section.jumbocover div.bg-cover {
+  background-color: rgba(52, 58, 64, 0.7) !important;
+  height: 768px;
+}
+
+body section.jumbocover img.welcome {
+  max-width: 405px;
+  max-height: 280px;
+}
+
+body section.jumbocover h2.invited {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+
+body section.jumbocover h3.invited {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+body section.jumbocover div.arah-bawah {
+  color: white;
+  font-size: 3rem;
+}
+
+body section.jumbocover button.open-invitation {
+  background-color: #cda56b !important;
+  border-color: #c1975a !important;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+body section.jumbocover button.open-invitation:hover {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+}
+
+body section.home {
+  background-image: url("http://localhost:8080/assets/img/wedding-pose-1.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+body section.home div.row div.col-12 {
+  background-color: rgba(52, 58, 64, 0.7);
+  height: 104.7vh;
+}
+
+body section.home div.row div.col-12 img.couple-name {
+  max-width: 40vw;
+  max-height: 40vh;
+  display: block;
+}
+
+body section.home div.row div.col-12 h1.name {
+  font-family: "Rouge Script", cursive;
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -50px;
+}
+
+body section.home div.row div.col-12 p.date {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section.home div.row div.col-12 p.kepada {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+body section.home div.row div.col-12 h2.tamu {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+body section.home div.row div.col-12 p.alamat {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+body section.home div#particles-js {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section.home div.triangle {
+  height: 80px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(51%, #be955a)), -webkit-gradient(linear, left bottom, right top, color-stop(50%, transparent), color-stop(51%, #be955a)), -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(51%, #cca56b)), -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(51%, #cca56b));
+  background-image: linear-gradient(to bottom right, transparent 50%, #be955a 51%), linear-gradient(to top right, transparent 50%, #be955a 51%), linear-gradient(to bottom left, transparent 50%, #cca56b 51%), linear-gradient(to top left, transparent 50%, #cca56b 51%);
+  background-position: 0 0, 0 100%, 100% 0, 100% 100%;
+  background-size: 50.3% 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  z-index: 4;
+}
+
+body section.home div.informasi {
+  z-index: 3;
+  background-color: #f5f6f5 !important;
+}
+
+body section.home div.informasi .container {
+  margin-bottom: 30vh;
+}
+
+body section.home div.informasi h2.info {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  margin-top: 20vh;
+  margin-bottom: 6vh;
+}
+
+body section.home div.informasi img.wave-1 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+body section.couple div.row div.col-md-12 h1.couple {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  text-align: center;
+  font-size: 3rem;
+}
+
+body section.couple div.row div.col-lg-4 .card {
+  border: none !important;
+}
+
+body section.couple div.row div.col-lg-4 .card .card-header {
+  border: none !important;
+  background-color: #f5f6f5;
+}
+
+body section.couple div.row div.col-lg-4 .card .card-body {
+  background-color: #f5f6f5;
+}
+
+body section.couple div.row div.col-lg-4 .card .card-footer {
+  background-color: #f5f6f5;
+  border: none !important;
+}
+
+body section.couple div.row div.col-lg-4 .card img.pria {
+  max-width: 20vw;
+  background-image: url("http://localhost:8080/assets/img/pria.jpg");
+  background-size: 20vw;
+}
+
+body section.couple div.row div.col-lg-4 .card img.wanita {
+  max-width: 20vw;
+  background-image: url("http://localhost:8080/assets/img/wanita.jpg");
+  background-size: 20vw;
+}
+
+body footer.navigasi {
+  z-index: 8;
+}
+
+body footer.navigasi div a {
+  color: white !important;
+}
+/*# sourceMappingURL=style.css.map */

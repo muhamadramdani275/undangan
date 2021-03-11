@@ -19,7 +19,7 @@
                         <i>Kepada Yth <br>
                             Bapak/Ibu/Saudara/i</i>
                     </p>
-                    <h2 class="tamu">Dani</h2>
+                    <h2 class="tamu"><?= $namaTamu ?></h2>
                     <p class="alamat">Karawang</p>
                 </div>
             </div>
@@ -113,36 +113,185 @@
         </div>
     </div>
 </section>
-<section class="container-fluid story animasi" id="story" style="height: 100vh;">
+
+<section class="container-fluid gallery animasi" id="gallery">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="text-center">STORY</h1>
+            <h1 class="text-center gallery">Gallery</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="<?= base_url('/assets/img') ?>/wedding-1.jpg" class="fancybox" data-fancybox="gallery">
+                <img src="<?= base_url('/assets/img') ?>/wedding-1.jpg" alt="Wedding 1" width="100%">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="<?= base_url('/assets/img') ?>/wedding-2.jpg" class="fancybox" data-fancybox="gallery">
+                <img src="<?= base_url('/assets/img') ?>/wedding-2.jpg" alt="Wedding 2" width="100%">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="<?= base_url('/assets/img') ?>/wedding-3.jpg" class="fancybox" data-fancybox="gallery">
+                <img src="<?= base_url('/assets/img') ?>/wedding-3.jpg" alt="Wedding 3" width="100%">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="<?= base_url('/assets/img') ?>/wedding-4.jpg" class="fancybox" data-fancybox="gallery">
+                <img src="<?= base_url('/assets/img') ?>/wedding-4.jpg" alt="Wedding 4" width="100%">
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="<?= base_url('/assets/img') ?>/wedding-5.jpg" class="fancybox" data-fancybox="gallery">
+                <img src="<?= base_url('/assets/img') ?>/wedding-5.jpg" alt="Wedding 5" width="100%">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="<?= base_url('/assets/img') ?>/wedding-6.jpg" class="fancybox" data-fancybox="gallery">
+                <img src="<?= base_url('/assets/img') ?>/wedding-6.jpg" alt="Wedding 6" width="100%">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="<?= base_url('/assets/img') ?>/wedding-7.jpg" class="fancybox" data-fancybox="gallery">
+                <img src="<?= base_url('/assets/img') ?>/wedding-7.jpg" alt="Wedding 7" width="100%">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="<?= base_url('/assets/img') ?>/wedding-8.jpg" class="fancybox" data-fancybox="gallery">
+                <img src="<?= base_url('/assets/img') ?>/wedding-8.jpg" alt="Wedding 8" width="100%">
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <a class="venobox wedding-video" data-autoplay="true" data-vbtype="video" href="https://youtu.be/qQM9hs1bfnQ" /><i class="fas fa-play"></i></a>
         </div>
     </div>
 </section>
-<section class="container-fluid gallery animasi" id="gallery" style="height: 100vh;">
+<section class="container-fluid location animasi" id="location">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="text-center">GALLERY</h1>
+            <h1 class="text-center location">Location</h1>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-6 maps" id="map">
+
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-6 text-center">
+            <h2 class="link-head">Link Google Maps</h2>
+            <a href="https://goo.gl/maps/4Z3fQ1ESDDycaeKT8" target="_blank" class="link-lokasi btn btn-primary">Klik disini</a>
         </div>
     </div>
 </section>
-<section class="container-fluid location animasi" id="location" style="height: 100vh;">
+<section class="container-fluid greeting animasi" id="greeting">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="text-center">LOCATION</h1>
+            <h1 class="text-center greetings">Greetings</h1>
         </div>
     </div>
-</section>
-<section class="container-fluid greeting animasi" id="greeting" style="height: 100vh;">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="text-center">GREETINGS</h1>
+            <h2 class="text-center greetings">Mau kirim ucapan selamat dan do'a kepada kedua mempelai?</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center greetings">Bisa klik link di bawah ini.</h2>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h4 class="text-center greetings">Kirim ucapan ke mempelai pria.</h4>
+            <textarea name="pesan-pria" id="pesan-pria" cols="10" rows="5" class="form-control"></textarea><br>
+            <a href="#" class="btn btn-success kirim-pria">Kirim pesan</a>
+        </div>
+        <div class="col-md-6">
+            <h4 class="text-center greetings">Kirim ucapan ke mempelai wanita</h4>
+            <textarea name="pesan-wanita" id="pesan-wanita" cols="10" rows="5" class="form-control"></textarea><br>
+            <a href="#" class="btn btn-success kirim-wanita">Kirim pesan</a>
         </div>
     </div>
 </section>
 <script>
+    //Maps
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        const wedding = {
+            lat: -6.3115457,
+            lng: 107.3197538
+        };
+        // const wedding = new google.maps.LatLng(-6.3115457, 107.3197538);
+        // The map, centered at wedding
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: wedding,
+        });
+
+        const contentString =
+            '<div id="content">' +
+            '<div id="siteNotice">' +
+            "</div>" +
+            '<h1 id="firstHeading" class="firstHeading">Lokasi Akad Nikah</h1>' +
+            '<div id="bodyContent">' +
+            "<p class='couple'> Ma'ruf Robani, S.Pd. & Komariah, S.Pd.</p>" +
+            "<p class='alamat'><b>Alamat :</b><br>" +
+            "Kp. Mekarjaya Desa Cikampek Utara Kec. Kotabaru Kab. Karawang<br>" +
+            "Hari, tanggal : Ahad, 30 Mei 2021<br>" +
+            "Waktu : Pukul 08.00 WIB s/d Selesai</p>" +
+            "Link lokasi : <a href='https://goo.gl/maps/4Z3fQ1ESDDycaeKT8' target='_blank'/>klik disini!</a>" +
+            "</div>" +
+            "</div>";
+
+        const infowindow = new google.maps.InfoWindow({
+            content: contentString,
+        });
+
+        // The marker, positioned at wedding
+        const marker = new google.maps.Marker({
+            position: wedding,
+            map: map,
+            title: "Lokasi Akad Nikah",
+        });
+        marker.addListener("click", () => {
+            infowindow.open(map, marker);
+        });
+    }
+
     $(document).ready(function() {
+
+        //Kirim pesan ke mempelai pria
+        $('.kirim-pria').on('click', function(e) {
+            e.preventDefault();
+
+            var pesanPria = $('#pesan-pria').val();
+            var messagePria = encodeURI(pesanPria)
+
+            var url = "https://wa.me/6285155288214?text=" + messagePria;
+            window.open(url);
+        });
+
+        //Kirim pesan ke mempelai wanita
+        $('.kirim-wanita').on('click', function(e) {
+            e.preventDefault();
+
+            var pesanwanita = $('#pesan-wanita').val();
+            var messagewanita = encodeURI(pesanwanita)
+
+            var url = "https://wa.me/6282238166538?text=" + messagewanita;
+            window.open(url);
+        });
+
+        $('.venobox').venobox();
+
         particlesJS('particles-js',
 
             {
@@ -271,10 +420,16 @@
             //     window.location.hash = target;
             // });
 
-            //Scroll and don't show hash
+            // Scroll and don't show hash
             $('html, body').animate({
                 'scrollTop': $target.offset().top
             }, 1000, 'swing');
+
+            // $('html, body').animate({
+            //     scrollTop: $target.offset().top
+            // }, 1000);
+
+
         });
     });
     window.addEventListener('scroll', reveal);

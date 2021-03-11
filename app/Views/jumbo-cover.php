@@ -10,7 +10,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h2 class="invited">Hello! You're invited.</h2>
+                    <h2 class="invited">Hello! <br> <?= $namaTamu ?> <br> You're invited.</h2>
                 </div>
             </div>
             <div class="row mt-4">

@@ -20,12 +20,10 @@ body {
   section.jumbocover {
     background-image: url("http://localhost:8080/assets/img/wedding-pose-1.jpg");
     background-size: cover;
-    display: none;
     position: fixed;
     width: 100% !important;
-    height: 768px !important;
-    max-height: 100%;
-    z-index: 10;
+    height: 100vh;
+    z-index: 199;
     bottom: 0;
     div.bg-cover {
       background-color: rgba(52, 58, 64, 0.7) !important;
@@ -41,6 +39,7 @@ body {
       text-align: center;
       color: white;
       font-size: 3rem;
+      margin-top: -50px;
     }
     h3.invited {
       font-family: "Dancing Script", cursive;
@@ -48,10 +47,12 @@ body {
       text-align: center;
       color: white;
       font-size: 2rem;
+      margin-top: -20px;
     }
     div.arah-bawah {
       color: white;
       font-size: 3rem;
+      margin-top: -20px;
     }
     button.open-invitation {
       background-color: #cda56b !important;
@@ -69,11 +70,11 @@ body {
     background-image: url("http://localhost:8080/assets/img/wedding-pose-1.jpg");
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100%;
     div.row {
       div.col-12 {
         background-color: rgba(52, 58, 64, 0.7);
-        height: 104.7vh;
+        height: 635px;
         img.couple-name {
           max-width: 40vw;
           max-height: 40vh;
@@ -136,26 +137,21 @@ body {
       background-position: 0 0, 0 100%, 100% 0, 100% 100%;
       background-size: 50.3% 50%;
       background-repeat: no-repeat;
-      position: absolute;
+      position: relative;
       right: 0;
-      bottom: -70px;
-      z-index: 4;
+      top: -64px;
+      z-index: 99;
     }
     div.informasi {
-      z-index: 3;
+      z-index: 95;
       background-color: #f5f6f5 !important;
-      // width: 100% !important;
-
-      .container {
-        margin-bottom: 30vh;
-      }
 
       h2.info {
         font-family: "Dancing Script", cursive;
         font-weight: 700;
         text-align: center;
         color: black;
-        margin-top: 20vh;
+        margin-top: 5vh;
         margin-bottom: 6vh;
       }
 
@@ -166,6 +162,7 @@ body {
   }
 
   section.couple {
+    padding-top: 10vh;
     div.row {
       div.col-md-12 {
         h1.couple {
@@ -204,11 +201,218 @@ body {
     }
   }
 
+  section.gallery {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    background-color: #efefef;
+    div.row {
+      margin-top: 5vh;
+      margin-right: 2vw;
+      margin-left: 2vw;
+
+      img {
+        transition: 0.3s;
+      }
+
+      img:hover {
+        transform: scale(1.15);
+      }
+
+      div.col-md-12 {
+        h1.gallery {
+          font-family: "Dancing Script", cursive;
+          font-weight: 700;
+          text-align: center;
+          font-size: 3rem;
+        }
+      }
+
+      div.col-lg-12 {
+        .wedding-video {
+          width: 640px;
+          height: 426px;
+          background-image: url("http://localhost:8080/assets/img/wedding-4.jpg");
+          background-size: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 3.5rem;
+          color: white;
+          opacity: 0.7;
+          transition: 0.3s;
+        }
+
+        .wedding-video:hover {
+          color: #6c757d;
+          opacity: 1;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  section.location {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+
+    h1.location,
+    h2.link-head {
+      font-family: "Dancing Script", cursive;
+      font-weight: 700;
+      text-align: center;
+      font-size: 3rem;
+    }
+    div.row {
+      margin-top: 5vh;
+      margin-right: 2vw;
+      margin-left: 2vw;
+
+      div#map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+
+        h1.firstHeading {
+          font-size: 1.5rem !important;
+          text-align: center;
+        }
+
+        p.couple {
+          font-size: 1.1rem;
+          font-weight: 600;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  section.greeting {
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+    background-color: #efefef;
+
+    h1.greetings {
+      font-family: "Dancing Script", cursive;
+      font-weight: 700;
+      text-align: center;
+      font-size: 3rem;
+    }
+    div.row {
+      div.col-md-6 {
+        a {
+          position: relative;
+          left: 40%;
+        }
+      }
+    }
+  }
+
+  button.lagu {
+    z-index: 555;
+    position: fixed;
+    bottom: 70px;
+    left: 30px;
+    border-radius: 50% !important;
+    background-color: #343a40 !important;
+    border: 1px solid #343a40 !important;
+  }
+
+  button.lagu:hover {
+    background-color: #6c757d !important;
+    border: 1px solid #6c757d !important;
+  }
+
   footer.navigasi {
-    z-index: 8;
+    z-index: 100;
     div {
       a {
         color: white !important;
+      }
+    }
+  }
+}
+
+//Media screen under 992px
+@media only screen and (max-width: 991px) {
+  section.jumbocover {
+    background-size: cover !important;
+    background-position: center !important;
+    height: 100vh !important;
+
+    .bg-cover {
+      height: 100vh !important;
+
+      .welcome {
+        max-width: 250px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  section.home {
+    background-size: 150vh !important;
+
+    div.informasi {
+      margin-top: -8vh;
+    }
+
+    div#particles-js {
+      height: 71%;
+    }
+
+    div.row {
+      div.col-12 {
+        height: 71vh !important;
+      }
+      div.col-md-12 {
+        margin-top: 2vh !important;
+        h1.name {
+          padding-top: 25px;
+          font-size: 1.8em !important;
+          text-align: center;
+        }
+
+        p.date {
+          font-size: 1rem !important;
+          margin-top: 2vh !important;
+        }
+
+        h2.tamu {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  section.couple {
+    div.row {
+      div.col-lg-4 {
+        div.card {
+          img.pria {
+            max-width: 45vw;
+            background-size: 45vw;
+          }
+          img.wanita {
+            max-width: 45vw;
+            background-size: 45vw;
+          }
+        }
+      }
+    }
+  }
+
+  section.gallery {
+    div.row {
+      a.fancybox {
+        img {
+          margin-bottom: 5vh;
+        }
+      }
+
+      a.wedding-video {
+        width: 100vw !important;
+        height: 30vh !important;
       }
     }
   }

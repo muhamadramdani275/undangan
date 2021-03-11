@@ -194,33 +194,62 @@
 <section class="container-fluid greeting animasi" id="greeting">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="text-center greetings">Greetings</h1>
+            <h1 class="text-center greetings">Hitungan Mundur Menuju Akad Nikah</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <h2 class="text-center greetings">Mau kirim ucapan selamat dan do'a kepada kedua mempelai?</h2>
-        </div>
+    <div class="row mt-5 d-flex justify-content-center text-center">
+        <div class="col-1"></div>
+        <div class="col-2 hari"><span></span></div>
+        <div class="col-2 jam"><span></span></div>
+        <div class="col-2 menit"><span></span></div>
+        <div class="col-2 detik"><span></span></div>
+        <div class="col-1"></div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <h2 class="text-center greetings">Bisa klik link di bawah ini.</h2>
+    <div class="row d-flex justify-content-center text-center">
+        <div class="col-1"></div>
+        <div class="col-2 label-hari">
+            <h2 class="label-hari">HARI</h2>
         </div>
-    </div>
-    <div class="row mt-5">
-        <div class="col-md-6">
-            <h4 class="text-center greetings">Kirim ucapan ke mempelai pria.</h4>
-            <textarea name="pesan-pria" id="pesan-pria" cols="10" rows="5" class="form-control"></textarea><br>
-            <a href="#" class="btn btn-success kirim-pria">Kirim pesan</a>
+        <div class="col-2 label-jam">
+            <h2 class="label-jam">JAM</h2>
         </div>
-        <div class="col-md-6">
-            <h4 class="text-center greetings">Kirim ucapan ke mempelai wanita</h4>
-            <textarea name="pesan-wanita" id="pesan-wanita" cols="10" rows="5" class="form-control"></textarea><br>
-            <a href="#" class="btn btn-success kirim-wanita">Kirim pesan</a>
+        <div class="col-2 label-menit">
+            <h2 class="label-menit">MENIT</h2>
         </div>
+        <div class="col-2 label-detik">
+            <h2 class="label-detik">DETIK</h2>
+        </div>
+        <div class="col-1"></div>
     </div>
 </section>
 <script>
+    //Countdown
+    var countDate = new Date('May 30 2021 00:00:00').getTime();
+
+    function countdown() {
+        var now = new Date().getTime();
+        gap = countDate - now;
+
+        var detik = 1000;
+        var menit = detik * 60;
+        var jam = menit * 60;
+        var hari = jam * 24;
+
+        var h = Math.floor(gap / (hari));
+        var j = Math.floor((gap % (hari)) / (jam));
+        var m = Math.floor((gap % (jam)) / (menit));
+        var d = Math.floor((gap % (menit)) / (detik));
+
+        document.querySelector('div.hari span').innerText = h;
+        document.querySelector('div.jam span').innerText = j;
+        document.querySelector('div.menit span').innerText = m;
+        document.querySelector('div.detik span').innerText = d;
+    }
+
+    setInterval(function() {
+        countdown();
+    }, 1000);
+
     //Maps
     // Initialize and add the map
     function initMap() {
@@ -268,27 +297,27 @@
 
     $(document).ready(function() {
 
-        //Kirim pesan ke mempelai pria
-        $('.kirim-pria').on('click', function(e) {
-            e.preventDefault();
+        // //Kirim pesan ke mempelai pria
+        // $('.kirim-pria').on('click', function(e) {
+        //     e.preventDefault();
 
-            var pesanPria = $('#pesan-pria').val();
-            var messagePria = encodeURI(pesanPria)
+        //     var pesanPria = $('#pesan-pria').val();
+        //     var messagePria = encodeURI(pesanPria)
 
-            var url = "https://wa.me/6285155288214?text=" + messagePria;
-            window.open(url);
-        });
+        //     var url = "https://wa.me/6285155288214?text=" + messagePria;
+        //     window.open(url);
+        // });
 
-        //Kirim pesan ke mempelai wanita
-        $('.kirim-wanita').on('click', function(e) {
-            e.preventDefault();
+        // //Kirim pesan ke mempelai wanita
+        // $('.kirim-wanita').on('click', function(e) {
+        //     e.preventDefault();
 
-            var pesanwanita = $('#pesan-wanita').val();
-            var messagewanita = encodeURI(pesanwanita)
+        //     var pesanwanita = $('#pesan-wanita').val();
+        //     var messagewanita = encodeURI(pesanwanita)
 
-            var url = "https://wa.me/6282238166538?text=" + messagewanita;
-            window.open(url);
-        });
+        //     var url = "https://wa.me/6282238166538?text=" + messagewanita;
+        //     window.open(url);
+        // });
 
         $('.venobox').venobox();
 

@@ -25,7 +25,7 @@ body h2.info {
 }
 
 body section.jumbocover {
-  background-image: url("http://localhost:8080/assets/img/wedding-pose-1.jpg");
+  background-image: url("http://undangan.sman1rawamerta.sch.id/assets/img/wedding-pose-1.jpg");
   background-size: cover;
   position: fixed;
   width: 100% !important;
@@ -81,7 +81,7 @@ body section.jumbocover button.open-invitation:hover {
 }
 
 body section.home {
-  background-image: url("http://localhost:8080/assets/img/wedding-pose-1.jpg");
+  background-image: url("http://undangan.sman1rawamerta.sch.id/assets/img/wedding-pose-1.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -220,13 +220,13 @@ body section.couple div.row div.col-lg-4 .card .card-footer {
 
 body section.couple div.row div.col-lg-4 .card img.pria {
   max-width: 20vw;
-  background-image: url("http://localhost:8080/assets/img/pria.jpg");
+  background-image: url("http://undangan.sman1rawamerta.sch.id/assets/img/pria.jpg");
   background-size: 20vw;
 }
 
 body section.couple div.row div.col-lg-4 .card img.wanita {
   max-width: 20vw;
-  background-image: url("http://localhost:8080/assets/img/wanita.jpg");
+  background-image: url("http://undangan.sman1rawamerta.sch.id/assets/img/wanita.jpg");
   background-size: 20vw;
 }
 
@@ -262,7 +262,7 @@ body section.gallery div.row div.col-md-12 h1.gallery {
 body section.gallery div.row div.col-lg-12 .wedding-video {
   width: 640px;
   height: 426px;
-  background-image: url("http://localhost:8080/assets/img/wedding-4.jpg");
+  background-image: url("http://undangan.sman1rawamerta.sch.id/assets/img/wedding-4.jpg");
   background-size: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,9 +337,28 @@ body section.greeting h1.greetings {
   font-size: 3rem;
 }
 
-body section.greeting div.row div.col-md-6 a {
-  position: relative;
-  left: 40%;
+body section.greeting div.row .hari,
+body section.greeting div.row .jam,
+body section.greeting div.row .menit,
+body section.greeting div.row .detik {
+  font-size: 5rem;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+body section.greeting div.row div.label-hari,
+body section.greeting div.row div.label-jam,
+body section.greeting div.row div.label-menit,
+body section.greeting div.row div.label-detik {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+body section.greeting div.row div.label-hari h2,
+body section.greeting div.row div.label-jam h2,
+body section.greeting div.row div.label-menit h2,
+body section.greeting div.row div.label-detik h2 {
+  font-size: 2.5rem !important;
 }
 
 body button.lagu {
@@ -383,6 +402,11 @@ body footer.navigasi div a {
   }
   section.home div.informasi {
     margin-top: -8vh;
+    font-size: 2rem !important;
+  }
+  section.home div.informasi p,
+  section.home div.informasi ul {
+    font-size: 1rem !important;
   }
   section.home div#particles-js {
     height: 71%;
@@ -405,6 +429,9 @@ body footer.navigasi div a {
   section.home div.row div.col-md-12 h2.tamu {
     font-size: 1.2rem;
   }
+  section.couple div.row div.col-md-12 h1.couple {
+    font-size: 2rem !important;
+  }
   section.couple div.row div.col-lg-4 div.card img.pria {
     max-width: 45vw;
     background-size: 45vw;
@@ -413,12 +440,86 @@ body footer.navigasi div a {
     max-width: 45vw;
     background-size: 45vw;
   }
+  section.gallery div.row div.col-md-12 h1.gallery {
+    font-size: 2rem !important;
+  }
   section.gallery div.row a.fancybox img {
     margin-bottom: 5vh;
   }
   section.gallery div.row a.wedding-video {
     width: 100vw !important;
     height: 30vh !important;
+  }
+  section.location h1.location,
+  section.location h2.link-head {
+    font-size: 2rem !important;
+  }
+  section.greeting div.col-md-12 h1.greetings {
+    font-size: 2rem !important;
+  }
+  section.greeting div.row div.hari,
+  section.greeting div.row div.jam,
+  section.greeting div.row div.menit,
+  section.greeting div.row div.detik {
+    height: 12vh !important;
+  }
+  section.greeting div.row div.hari span,
+  section.greeting div.row div.jam span,
+  section.greeting div.row div.menit span,
+  section.greeting div.row div.detik span {
+    font-size: 2rem !important;
+    position: relative;
+    top: -35px;
+  }
+  section.greeting div.row div.hari {
+    margin-left: 0 !important;
+    margin-right: 8px !important;
+  }
+  section.greeting div.row div.jam {
+    margin-left: 0 !important;
+    margin-right: 8px !important;
+  }
+  section.greeting div.row div.menit {
+    margin-left: 0 !important;
+    margin-right: 8px !important;
+  }
+  section.greeting div.row div.detik {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  section.greeting div.row div.label-hari {
+    margin-left: 0 !important;
+    margin-right: 8px !important;
+  }
+  section.greeting div.row div.label-jam {
+    margin-left: 0 !important;
+    margin-right: 8px !important;
+  }
+  section.greeting div.row div.label-menit {
+    margin-left: 0 !important;
+    margin-right: 8px !important;
+  }
+  section.greeting div.row div.label-detik {
+    margin-left: 0 !important;
+    margin-right: 9px !important;
+  }
+  section.greeting div.row div.label-hari h2.label-hari,
+  section.greeting div.row div.label-hari h2.label-jam,
+  section.greeting div.row div.label-hari h2.label-menit,
+  section.greeting div.row div.label-hari h2.label-detik,
+  section.greeting div.row div.label-jam h2.label-hari,
+  section.greeting div.row div.label-jam h2.label-jam,
+  section.greeting div.row div.label-jam h2.label-menit,
+  section.greeting div.row div.label-jam h2.label-detik,
+  section.greeting div.row div.label-menit h2.label-hari,
+  section.greeting div.row div.label-menit h2.label-jam,
+  section.greeting div.row div.label-menit h2.label-menit,
+  section.greeting div.row div.label-menit h2.label-detik,
+  section.greeting div.row div.label-detik h2.label-hari,
+  section.greeting div.row div.label-detik h2.label-jam,
+  section.greeting div.row div.label-detik h2.label-menit,
+  section.greeting div.row div.label-detik h2.label-detik {
+    font-size: 1.1rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

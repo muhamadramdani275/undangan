@@ -18,7 +18,7 @@ body {
   }
 
   section.jumbocover {
-    background-image: url("http://localhost:8080/assets/img/wedding-pose-1.jpg");
+    background-image: url("http://undangan.sman1rawamerta.sch.id/assets/img/wedding-pose-1.jpg");
     background-size: cover;
     position: fixed;
     width: 100% !important;
@@ -67,7 +67,7 @@ body {
   }
 
   section.home {
-    background-image: url("http://localhost:8080/assets/img/wedding-pose-1.jpg");
+    background-image: url("http://undangan.sman1rawamerta.sch.id/assets/img/wedding-pose-1.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -188,12 +188,12 @@ body {
           }
           img.pria {
             max-width: 20vw;
-            background-image: url("http://localhost:8080/assets/img/pria.jpg");
+            background-image: url("http://undangan.sman1rawamerta.sch.id/assets/img/pria.jpg");
             background-size: 20vw;
           }
           img.wanita {
             max-width: 20vw;
-            background-image: url("http://localhost:8080/assets/img/wanita.jpg");
+            background-image: url("http://undangan.sman1rawamerta.sch.id/assets/img/wanita.jpg");
             background-size: 20vw;
           }
         }
@@ -231,7 +231,7 @@ body {
         .wedding-video {
           width: 640px;
           height: 426px;
-          background-image: url("http://localhost:8080/assets/img/wedding-4.jpg");
+          background-image: url("http://undangan.sman1rawamerta.sch.id/assets/img/wedding-4.jpg");
           background-size: 100%;
           display: flex;
           justify-content: center;
@@ -299,10 +299,24 @@ body {
       font-size: 3rem;
     }
     div.row {
-      div.col-md-6 {
-        a {
-          position: relative;
-          left: 40%;
+      .hari,
+      .jam,
+      .menit,
+      .detik {
+        font-size: 5rem;
+        margin-right: 10px;
+        margin-left: 10px;
+        span {
+        }
+      }
+      div.label-hari,
+      div.label-jam,
+      div.label-menit,
+      div.label-detik {
+        margin-left: 10px;
+        margin-right: 15px;
+        h2 {
+          font-size: 2.5rem !important;
         }
       }
     }
@@ -355,6 +369,11 @@ body {
 
     div.informasi {
       margin-top: -8vh;
+      font-size: 2rem !important;
+      p,
+      ul {
+        font-size: 1rem !important;
+      }
     }
 
     div#particles-js {
@@ -387,6 +406,11 @@ body {
 
   section.couple {
     div.row {
+      div.col-md-12 {
+        h1.couple {
+          font-size: 2rem !important;
+        }
+      }
       div.col-lg-4 {
         div.card {
           img.pria {
@@ -404,6 +428,11 @@ body {
 
   section.gallery {
     div.row {
+      div.col-md-12 {
+        h1.gallery {
+          font-size: 2rem !important;
+        }
+      }
       a.fancybox {
         img {
           margin-bottom: 5vh;
@@ -413,6 +442,77 @@ body {
       a.wedding-video {
         width: 100vw !important;
         height: 30vh !important;
+      }
+    }
+  }
+  section.location {
+    h1.location,
+    h2.link-head {
+      font-size: 2rem !important;
+    }
+  }
+
+  section.greeting {
+    div.col-md-12 {
+      h1.greetings {
+        font-size: 2rem !important;
+      }
+    }
+
+    div.row {
+      div.hari,
+      div.jam,
+      div.menit,
+      div.detik {
+        height: 12vh !important;
+        span {
+          font-size: 2rem !important;
+          position: relative;
+          top: -35px;
+        }
+      }
+      div.hari {
+        margin-left: 0 !important;
+        margin-right: 8px !important;
+      }
+      div.jam {
+        margin-left: 0 !important;
+        margin-right: 8px !important;
+      }
+      div.menit {
+        margin-left: 0 !important;
+        margin-right: 8px !important;
+      }
+      div.detik {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      div.label-hari {
+        margin-left: 0 !important;
+        margin-right: 8px !important;
+      }
+      div.label-jam {
+        margin-left: 0 !important;
+        margin-right: 8px !important;
+      }
+      div.label-menit {
+        margin-left: 0 !important;
+        margin-right: 8px !important;
+      }
+      div.label-detik {
+        margin-left: 0 !important;
+        margin-right: 9px !important;
+      }
+      div.label-hari,
+      div.label-jam,
+      div.label-menit,
+      div.label-detik {
+        h2.label-hari,
+        h2.label-jam,
+        h2.label-menit,
+        h2.label-detik {
+          font-size: 1.1rem !important;
+        }
       }
     }
   }
